@@ -2,15 +2,15 @@
 
 공통: 
 1) 회원 가입, 로그인
--> 사용자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다
--> 관리자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다
--> ID, PW를 이용해 로그인 할 수 있다  
+-> 사용자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다 auth/user-signup
+-> 관리자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다 auth/admin-singup
+-> ID, PW를 이용해 로그인 할 수 있다  auth/login
 
 2) 중고거래 목록 및 중고 거래 상품 조회
 메뉴 버튼
--> 카테고리 별 상품 목록을 조회할 수 있다
--> 인기 상품 목록을 조회할 수 있다
--> 최근 상품 목록을 조회할 수 있다
+-> 카테고리 별 상품 목록을 조회할 수 있다 /product/list/{CategoryId}
+-> 인기 상품 목록을 조회할 수 있다 /product/best-list
+-> 최근 상품 목록을 조회할 수 있다 /product/recent-list
 -> 검색 기능으로 판매자 및 상품을 조회할 수 있다 
 -> 중고 거래 상품의 상세 정보를 조회할 수 있다 
 
@@ -25,6 +25,7 @@
 -> 등록한 중고거래 물품의 정보를 수정 및 삭제할 수 있다
 -> 판매하는 중고거래 물품 전체 목록을 조회할 수 있고, 중고거래 물품 하나의 정보도 조회할 수 있다
 -> 판매자의 정보 및 다른 판매 상품이 같이 보여진다
+-> 판매한 물품 조회수 및 찜 갯수도 보여진다 
 -> 연관 상품도 보여진다
 -> 타 중고 거래 사이트(번개장터 및 중고 나라)에서 해당 물품에 대한 정보 및 가격이 보여진다  
 
@@ -38,3 +39,69 @@
 관리자: 
 1) 중고거래 목록 및 중고거래 카테고리 관리
 2) Q&A 게시판 관리
+
+
+-------------------------------------
+*로그인 시 Bean Validation 사용하기 
+*Mybatis 사용하기 (JPA-> Repository 사용 못 함)  
+*Test Code 사용하기
+*JWT 사용하기 
+
+사용 기술 스택 
+-> Spring, Spring Boot, Spring Security, JSP, JWT, Junit, Swagger
+
+-------------------------------------
+
+회원(Member, 모두 not null)
+1. 회원 idx: int member_idx (Auto Increment)
+2. 회원 ID: String id
+3. 회원 PW: String pw
+4. 회원 이름: String name
+4. 회원 번호: String phone
+5. 회원 이메일 주소: String email
+6. 회원 권한: String role (1. 이용자 2. 관리자) 
+
+중고물품(product)
+1. 상품 idx: int product_idx (Auto Increment)
+3. 회원 ID: String id
+4. 상품 카테고리: idx product_category
+5. 상품 이름: String product_name
+6. 상품 설명: String product_description
+7. 상품 가격: String product_price
+8. 택배비 포함 여부: String delivery_fee (포함, 불포함)
+9. 상품 이미지: String product_image
+10. 상품 상태: String product_status (최상, 상, 중, 하, 최하)
+11. 거래 방식: String method (택배 거래, 직거래)
+12. 생성일: datetime created_date
+13. 거래 상태: String is_sold_out (판매중, 예약중, 거래 완료)
+*14. 구매자 ID: String buyer_id (null)
+
+찜 목록(favorites)
+1. 찜 idx: int favorite_idx(Auto Increment)
+2. 회원 ID: String id 
+3. 상품 이름: String product_name
+4. 상품 idx: int product_idx 
+
+카테고리 목록
+1. 카테고리 idx: product_category
+2. 카테고리 이름: product_name
+
+*채팅(메시지) 목록
+1. 메시지 idx: int message_idx
+2. 판매자 id: String seller_id
+3. 구매자 id: String buyer_id
+4. 메시지 내용: String message_content 
+
+리뷰
+1. 리뷰 idx: int review_idx
+2. 판매자 id: String buyer_id
+3. 구매자 id: String seller_id
+4. 리뷰 설명: String review_content 
+5. 평가: String review_valuation (최상, 상, 중, 하, 최하)
+
+Q&A
+1. Q&A idx: int q&a_idx
+2. 회원 ID: String id 
+3. Q&A 제목: String qna_title
+4. Q&A 내용: String qna_content
+5. 생성일: datetime qna_date
