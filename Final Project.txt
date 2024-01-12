@@ -2,9 +2,9 @@
 
 공통: 
 1) 회원 가입, 로그인
--> 사용자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다 auth/user-signup
--> 관리자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다 auth/admin-singup
--> ID, PW를 이용해 로그인 할 수 있다  auth/login
+-> 사용자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다 
+-> 관리자는 ID, PW, 이메일, 닉네임, 휴대전화번호, 주소지를 통해 회원가입을 할 수 있다 
+-> ID, PW를 이용해 로그인 할 수 있다  
 
 2) 중고거래 목록 및 중고 거래 상품 조회
 메뉴 버튼
@@ -42,7 +42,8 @@
 
 
 -------------------------------------
-*로그인 시 Bean Validation 사용하기 
+*로그인 시 Bean Validation 사용하기
+*@PreAuthorize -> Spring Security 사용하기  
 *Mybatis 사용하기 (JPA-> Repository 사용 못 함)  
 *Test Code 사용하기
 *JWT 사용하기 
@@ -72,6 +73,7 @@
 9. 상품 이미지: String product_image
 10. 상품 상태: String product_status (최상, 상, 중, 하, 최하)
 11. 거래 방식: String method (택배 거래, 직거래)
+12. 거래 주소: String address
 12. 생성일: datetime created_date
 13. 거래 상태: String is_sold_out (판매중, 예약중, 거래 완료)
 *14. 구매자 ID: String buyer_id (null)
@@ -92,16 +94,64 @@
 3. 구매자 id: String buyer_id
 4. 메시지 내용: String message_content 
 
-리뷰
+리뷰 목록
 1. 리뷰 idx: int review_idx
 2. 판매자 id: String buyer_id
 3. 구매자 id: String seller_id
 4. 리뷰 설명: String review_content 
 5. 평가: String review_valuation (최상, 상, 중, 하, 최하)
 
-Q&A
+Q&A 목록
 1. Q&A idx: int q&a_idx
 2. 회원 ID: String id 
 3. Q&A 제목: String qna_title
 4. Q&A 내용: String qna_content
 5. 생성일: datetime qna_date
+
+--------------
+Mind Mapping
+*예를 들어 AdminDTO를 만들 때 AdminDTOForm도로 만든 후 컨트롤러에서 @valid한 후
+ AdminDTO를 메서드 @builder 통해서 객체 생성 후 실행함
+*(최상, 상, 중, 하, 최하), (판매중, 예약중, 거래 완료) -> enum으로 만들기 
+
+
+하위 디렉토리: user, admin, product, favorite, review, qna, message
+
+user/login, POST, 사용자 회원 가입
+admin/login, POST, 관리자 회원 가입
+user/signin, POST, 사용자  
+admin/login, POST, 관리자 로그인
+
+/product/list/{CategoryId}, GET, 카테고리 별 중고 상품 목록 조회
+/product/best-list, GET, 베스트 중고 상품 목록 조회
+/product/recent-list, GET, 최신 중고 상품 목록 조회 
+/product, POST, 중고 상품 등록 
+/product/{productid}, GET, 중고 상품 상세 조회
+
+/favorite, GET, 찜 목록 조회
+/favorite, POST, 찜 목록 추가 
+/favorite, DELETE, 찜 목록 삭제
+
+/review, GET, 리뷰 조회
+/review, POST, 리뷰 등록 
+/review, DELETE, 리뷰 삭제 
+
+/review, GET, 리뷰 조회
+/review, POST, 리뷰 등록 
+/review, DELETE, 리뷰 삭제 
+
+/qna, GET, QnA 조회
+/qna, POST, 리뷰 등록
+/qna, DELETE, 리뷰 삭제 
+/qna, POST, 리뷰 답변 
+
+*/message, GET, 채팅 메세지 조회
+*/message, POST, 채팅하기 
+
+
+파일구성
+data -> entity, dto, repository 
+controller
+service -> impl, (interface)
+common -> config, exception
+
