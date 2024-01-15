@@ -25,3 +25,7 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 |              | /user/review                                                               | `GET` `PUT` `DELETE`        | 리뷰 조회, 수정, 삭제     | USER |
 | **message**  | /user/message                                                              | `GET` `POST`                | 채팅 조회, 작성     | USER |
 
+# 임시 아키텍쳐
+
+![전체 아키텍쳐 임시](https://github.com/briankh1221/final_project/assets/129491967/2787277b-e6b0-4d23-a9a3-f50445779786)
+
