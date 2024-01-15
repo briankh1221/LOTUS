@@ -45,8 +45,7 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 
 
 # ERD
-[👉 ERD Cloud에서 직접 보기]
-(https://www.erdcloud.com/d/pTHTfhADbwpA9mggo)
+[👉 ERD Cloud에서 직접 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo)
 
 ![erd](https://github.com/briankh1221/final_project/assets/129491967/d7205d77-e2b7-4103-bb33-6a2c28276479)
 
