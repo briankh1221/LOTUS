@@ -19,9 +19,9 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 |              | /user/product/{productId}                                                  | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | - |
 | **favorite** | /user/favorite                                                             | `POST`                      | 찜 등록      | USER  |
 |              | /user/favorite                                                             | `GET` `PUT` `DELETE`        | 찜 상품 조회, 수정, 삭제     | USER  |
-| **qna**      | /user/qna                                                                  | `GET` `PUT` `DELETE`        | qna 조회, 등록, 삭제     | USER  |
-|              | /user/qna                                                                  | `POST`                      | qna 작성     | USER  |
-| **review**   | /user/review                                                               | `GET` `PUT` `DELETE`        | 리뷰 조회, 수정, 삭제     | USER  |
-|              | /user/review                                                               | `POST`                      | 리뷰 작성    | USER  |
-| **message**  | /user/message                                                             | `GET` `POST`                 | 채팅 조회, 작성     | USER  |
+| **qna**      | /user/qna                                                                  | `POST`                      | qna 작성     | USER  |
+|              | /user/qna                                                                  | `GET` `PUT` `DELETE`        | qna 조회, 등록, 삭제     | USER  |
+| **review**   | /user/review                                                               | `POST`                      | 리뷰 작성    | USER  |
+|              | /user/review                                                               | `GET` `PUT` `DELETE`        | 리뷰 조회, 수정, 삭제     | USER  |
+| **message**  | /user/message                                                              | `GET` `POST`                | 채팅 조회, 작성     | USER  |
 
