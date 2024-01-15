@@ -1,9 +1,12 @@
 # final_project
 k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 
+# api 명세
 도메인: user, admin, product, favorite, review, qna, message, common
 
 모든 도메인 - controller, service/impl - imple, dto/form, entity, repository
+
+|Domain|URL|Http Method|description|
 
 common - config, exception, enum, BasteTimeEntity, (S3UploaderService)
 
