@@ -13,6 +13,7 @@ common - config, exception, enum, BasteTimeEntity, (S3UploaderService)
 
 |/signin|POST|사용자|관리자 로그인|
 |signup|POST|사용자 회원가입|
+
 /signup/admin, POST, 관리자 회원 가입 
 
 /user/product/{productid}, GET, PUT, DELETE 중고 상품 상세 조회, 수정, 삭제
