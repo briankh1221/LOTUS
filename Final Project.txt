@@ -60,7 +60,7 @@
 4. 회원 이름: String name
 4. 회원 번호: String phone
 5. 회원 이메일 주소: String email
-6. 회원 권한: String role (1. 이용자 2. 관리자) 
+*6. 회원 권한: String role (1. 이용자 2. 관리자) 
 
 중고물품(product)
 1. 상품 idx: int product_idx (Auto Increment)
@@ -107,6 +107,22 @@ Q&A 목록
 3. Q&A 제목: String qna_title
 4. Q&A 내용: String qna_content
 5. 생성일: datetime qna_date
+
+*관리자 로그인
+
+1. 관리자 id: String id
+2. 관리자 pw: String pw
+3. 인증 코드: String code
+4. 관리자 이름: String name
+5. 관리자 번호: String phone
+
+
+1. 회원 idx: int member_idx (Auto Increment)
+2. 회원 ID: String id
+3. 회원 PW: String pw
+4. 회원 이름: String name
+4. 회원 번호: String phone
+5. 회원 이메일 주소: String email
 
 --------------
 Mind Mapping
