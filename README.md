@@ -31,6 +31,7 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 |              | /product/recent-list                                                       | `GET`                       | 최신 상품 목록 조회          | USER |
 |              | /user/product                                                              | `POST`                      | 상품 등록             | USER |
 |              | /user/product/{productId}                                                  | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | USER |
+|              | /user/product-list                                                         | `GET`                       | 사용자 등록 상품 목록     | USER |
 | **favorite** | /user/favorite                                                             | `POST`                      | 찜 등록      | USER |
 |              | /user/favorite                                                             | `GET` `PUT` `DELETE`        | 찜 상품 조회, 수정, 삭제     | USER |
 | **qna**      | /user/qna                                                                  | `POST`                      | qna 작성     | USER |
