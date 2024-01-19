@@ -115,14 +115,7 @@ Q&A 목록
 3. 인증 코드: String code
 4. 관리자 이름: String name
 5. 관리자 번호: String phone
-
-
-1. 회원 idx: int member_idx (Auto Increment)
-2. 회원 ID: String id
-3. 회원 PW: String pw
-4. 회원 이름: String name
-4. 회원 번호: String phone
-5. 회원 이메일 주소: String email
+6. 관리자 이메일: String email
 
 --------------
 Mind Mapping
@@ -171,3 +164,6 @@ controller
 service -> impl, (interface)
 common -> config, exception
 
+주석 *24.01.18 jihyun
+
+추가함 *24.01.17 jihyun
