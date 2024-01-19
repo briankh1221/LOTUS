@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper
+	namespace="com.gyeonglodang.mybatis.mapper.JobNotice_boardMapper">
+
+
+	<select id="ncSearchList" parameterType="JobNotice_boardDTO" resultType="JobNotice_boardDTO">
+        <![CDATA[
+        select * from jobnotice_board where companyIdx = #{companyIdx}  
+        ]]>
+	</select>
+
+	<insert id="jobInsert" parameterType="JobNoticeRecListDTO">
+        <![CDATA[
+	        insert into  jobNotice_board (
+	        	companyIdx,
+	        	jobNotice_title,
+	        	jobNotice_regidate,
+	        	jobNotice_operation,
+	        	jobNotice_postingDate
+	        )  VALUES (
+	        	#{jobDto.companyIdx},
+		        #{jobDto.jobNotice_title},
+		        now(),
+		        #{jobDto.jobNotice_operation},
+		        #{jobDto.jobNotice_postingDate}
+	        )
+        ]]>
+	</insert>
+	
+	<update id="jobUpdate" parameterType="JobNoticeRecListDTO">
+        <![CDATA[
+	        update jobNotice_board set 
+	        	jobNotice_title = #{jobDto.jobNotice_title},
+	        	jobNotice_operation = #{jobDto.jobNotice_operation},
+	        	jobNotice_postingDate = #{jobDto.jobNotice_postingDate}
+	        where noticeControl_idx = #{jobDto.noticeControl_idx}
+	      
+        ]]>
+	</update>
+	
+	<delete id="jobDelete" parameterType="JobNoticeRecListDTO">
+        <![CDATA[
+	        delete from jobNotice_board
+        	where noticeControl_idx = #{jobDto.noticeControl_idx}
+        ]]>
+	</delete>
+	
+	<select id="getJobIdx" parameterType="JobNoticeRecListDTO" resultType ="int">
+        <![CDATA[
+        select noticeControl_idx from jobnotice_board where jobNotice_title = #{jobDto.jobNotice_title}  
+        ]]>
+	</select>
+	
+	<insert id="recInsert" parameterType="JobNoticeRecListDTO">
+        <![CDATA[
+			insert into  recruitCateg_board (
+	        	companyIdx,
+	        	noticeControl_idx,
+	        	recruitCateg_order,
+	        	recruitCateg_categ,
+	        	recruitCateg_number,
+	        	recruitCateg_testID
+	        )  VALUES (
+	        	#{jobDto.companyIdx},
+	        	#{jobDto.noticeControl_idx},
+		        1,
+		        #{recDto.recruitCateg_categ},
+		        #{recDto.recruitCateg_number},
+		        #{recDto.recruitCateg_testID}
+	        )
+        ]]>
+	</insert>
+	
+	<update id="recUpdate" parameterType="JobNoticeRecListDTO">
+        <![CDATA[
+	        update recruitCateg_board set
+	        	recruitCateg_categ = #{recDto.recruitCateg_categ},
+	        	recruitCateg_number = #{recDto.recruitCateg_number},
+	        	recruitCateg_testID = #{recDto.recruitCateg_testID}
+        	where recruitCateg_idx = #{recDto.recruitCateg_idx}
+        ]]>
+	</update>
+	
+	<delete id="recDelete" parameterType="JobNoticeRecListDTO">
+        <![CDATA[
+	        delete from recruitCateg_board
+        	where recruitCateg_idx = #{recDto.recruitCateg_idx}
+        ]]>
+	</delete>
+	
+	<delete id="recDeleteAll" parameterType="JobNoticeRecListDTO">
+        <![CDATA[
+	        delete from recruitCateg_board
+        	where noticeControl_idx = #{recDto.noticeControl_idx}
+        ]]>
+	</delete>
+	
+	<delete id="jobCatgDelete" parameterType="JobNoticeCateg_boardDTO">
+        <![CDATA[
+	        delete from jobnoticecateg_board
+        	where noticeControl_idx = #{noticeControl_idx}
+        ]]>
+	</delete>
+	
+	<select id="getJobContent" parameterType="JobNoticeRecListDTO" resultType="JobNotice_boardDTO">
+        <![CDATA[
+        select * from jobnotice_board where noticeControl_idx = #{jobDto.noticeControl_idx} 
+        ]]>
+	</select>
+	
+	<select id="getRecContent" parameterType="JobNoticeRecListDTO" resultType="RecruitCateg_boardDTO">
+        <![CDATA[
+        select * from recruitCateg_board where noticeControl_idx = #{recDto.noticeControl_idx}   
+        ]]>
+	</select>
+
+	<insert id="companyAccount_insert" parameterType="CompanyAccount_boardDTO">
+        <![CDATA[
+	        insert into  companyAccount_board (
+	        	companyIdx,
+	        	name,
+	        	contactNumber,
+	        	mail,
+	        	companyUrl,
+	        	companyLogoImg,
+	        	companySiteImg
+	        )  VALUES (
+	        	#{companyIdx},
+		        #{name},
+		    	#{contactNumber},
+		        #{mail},
+		        #{companyUrl},
+		        #{companyLogoImg},
+		        #{companySiteImg}
+	        )
+        ]]>
+	</insert>
+
+	<update id="companyAccount_update" parameterType="CompanyAccount_boardDTO">
+        <![CDATA[
+	        update companyAccount_board set
+	        	name = #{name},
+	        	contactNumber = #{contactNumber},
+	        	mail = #{mail},
+	        	companyUrl = #{companyUrl},
+	        	companyLogoImg = #{companyLogoImg},
+	        	companySiteImg = #{companySiteImg},
+	        	companySiteImg = #{companySiteImg}
+	        where companyIdx = #{companyIdx}
+        ]]>
+	</update>
+	
+	<select id="companyAccount_getContent" parameterType="CompanyAccount_boardDTO" resultType="CompanyAccount_boardDTO">
+        <![CDATA[
+        select * from companyAccount_board where companyIdx = #{companyIdx}   
+        ]]>
+	</select>
+
+
+</mapper>
