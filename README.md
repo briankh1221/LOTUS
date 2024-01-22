@@ -1,4 +1,4 @@
-# final_project
+# Final_Project
 k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 
 
@@ -15,7 +15,7 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 > 24.01.16 ~ 24.03.09 (8주) \
 > 프론트, 백엔드 2명(권지현, 고훈)
 
-# api 명세
+# API 명세
 
 | Domain       | URL                                                                        | Http Method                 | description       | 접근 권한 |
 |:-------------|:---------------------------------------------------------------------------|:----------------------------|:------------------|:------|
@@ -31,6 +31,7 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 |              | /product/recent-list                                                       | `GET`                       | 최신 상품 목록 조회          | USER |
 |              | /user/product                                                              | `POST`                      | 상품 등록             | USER |
 |              | /user/product/{productId}                                                  | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | USER |
+|              | /user/product-list                                                         | `GET`                       | 사용자 등록 상품 목록     | USER |
 | **favorite** | /user/favorite                                                             | `POST`                      | 찜 등록      | USER |
 |              | /user/favorite                                                             | `GET` `PUT` `DELETE`        | 찜 상품 조회, 수정, 삭제     | USER |
 | **qna**      | /user/qna                                                                  | `POST`                      | qna 작성     | USER |
@@ -47,7 +48,7 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 # ERD
 [👉 ERD Cloud에서 직접 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo)
 
-![erd](https://github.com/briankh1221/final_project/assets/129491967/d7205d77-e2b7-4103-bb33-6a2c28276479)
+![erd](https://github.com/briankh1221/final_project/assets/145642491/ce7d8486-fe58-4e0b-afe7-8b68e803adde)
 
 
 

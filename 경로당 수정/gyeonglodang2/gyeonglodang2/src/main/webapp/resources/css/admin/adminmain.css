@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: 'CookieRun';
+	src: url('../../font/CookieRun Regular.ttf') format('truetype');
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'CookieRun';
+}
+
+a {
+	text-decoration: none;
+	display: block;
+}
+
+ul,li {
+	list-style: none;
+}
+
+
+
+#wrap {
+	position: relative;
+	top: 110px;
+	left: 200px;
+	width: 87vw;
+}
+
+#content {
+	width: 1200px;
+	margin: 0 auto;
+	
+}

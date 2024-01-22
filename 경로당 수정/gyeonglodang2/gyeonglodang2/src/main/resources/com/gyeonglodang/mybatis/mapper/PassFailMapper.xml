@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.gyeonglodang.mybatis.mapper.PassFailMapper">
+	<select id="getDateSetting" parameterType="Map" resultType="Map">
+		select announcement_date,announcement_setting
+		from part_list 
+		where part_list_title = #{part} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getTextList" parameterType="Map" resultType="PassFailDTO">
+		select *
+		from pass_fail_text where part = #{part} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getFieldidxs" parameterType="Map" resultType="PassFailDTO">
+		select *
+		from part_field where part = #{part} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getPassText" parameterType="PassFailDTO" resultType="String">
+		select pass_text
+		from pass_fail_text 
+		where part = #{part} and fieldidx = #{fieldidx} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getFailText" parameterType="PassFailDTO" resultType="String">
+		select fail_text
+		from pass_fail_text 
+		where part = #{part} and fieldidx = #{fieldidx} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getCustomTitle" parameterType="Map" resultType="AnnouncementCustomDTO">
+		select announcement_custom_title
+		from announcement_custom
+		where part = #{part} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getCustom" parameterType="Map" resultType="AnnouncementCustomDTO">
+		select *
+		from announcement_custom
+		where announcement_custom_title = #{title} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getMainCustom" parameterType="Map" resultType="AnnouncementCustomDTO">
+		SELECT *FROM (
+    	SELECT *, ROW_NUMBER() OVER (ORDER BY idx) AS rownum
+    	FROM announcement_custom
+    	WHERE companyIdx = #{companyIdx} AND gonggoidx = #{gonggoidx}
+		) AS subquery
+		WHERE rownum = 1;
+	</select>
+	
+	<select id="getApplicantList" parameterType="Map" resultType="AnnouncementCustomDTO">
+		select *
+		from announcement_applicant
+		where announcement_custom_title = #{title} and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getSuccessfulCandidateList" parameterType="Map" resultType="SuccessfulCandidateListDTO">
+		select *
+		from successful_candidate_list
+		where companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+		and pass_fail LIKE CONCAT(#{pass_fail}, '%')
+	</select>
+	
+	<select id="getSuccessfulList" parameterType="Map" resultType="SuccessfulCandidateListDTO">
+		select *
+		from successful_candidate_list
+		where companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+		and fieldidx LIKE CONCAT('%', #{fieldidx}, '%')
+		and pass_fail LIKE CONCAT(#{pass_fail}, '%')
+	</select>
+	
+	<select id="getCustomizeList" parameterType="Map" resultType="CustomizeDTO">
+		select *
+		from customize_setting
+		where companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+		and part=#{part}
+		and name LIKE CONCAT('%', #{name}, '%')
+	</select>
+	
+	<select id="getCommon" parameterType="Map" resultType="Map">
+		select cs.scode, cs.name , cs.column1 , cs.fieldidx, 
+		cs.column2 , cs.column3 ,scl.pass_fail, cs.part,
+		cs.companyIdx,cs.gonggoidx
+		from customize_setting cs
+		join successful_candidate_list scl on cs.scode = scl.scode
+		and cs.scode = #{scode} and cs.part = #{part}
+	</select>
+	
+	<select id="getPartTitle" parameterType="Map" resultType="Map">
+		select * from part_list
+		where companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+	</select>
+	
+	<select id="getFinal" parameterType="String" resultType="Map">
+      select gonggoidx,field,scode from applicant
+      where scode=#{scode}
+   </select>
+	
+	<insert id="insertCustom" parameterType="Map" >
+		insert into announcement_custom(part,announcement_custom_title,context,companyIdx,gonggoidx)
+		values(#{part},#{title},#{context},#{companyIdx},#{gonggoidx})
+	</insert>
+	
+	<insert id="insertSuccessfulList" parameterType="SuccessfulCandidateListDTO" >
+		insert into successful_candidate_list(companyIdx,scode,name,fieldidx,pass_fail,gonggoidx)
+		values(#{companyIdx},#{scode},#{name},#{fieldidx},#{pass_fail},#{gonggoidx})
+	</insert>
+	
+	<insert id="insertAA" parameterType="Map" >
+		insert into announcement_applicant(companyIdx,announcement_custom_title,scode,name,fieldidx,gonggoidx)
+		values(#{companyIdx},#{title},#{scode},#{name},#{fieldidx},#{gonggoidx})
+	</insert>
+	
+	<insert id="insertCS" parameterType="Map" >
+		insert into customize_setting(companyIdx,part,scode,name,fieldidx,column1,column2,column3,gonggoidx)
+		values(#{companyIdx},#{part},#{scode},#{name},#{fieldidx},#{column1},#{column2},#{column3},#{gonggoidx})
+	</insert>
+	
+	<insert id="insertAC" parameterType="Map" >
+		insert into applicant_customize(companyIdx,scode,attribute_field,customize_context,gonggoidx)
+		values(#{companyIdx},#{scode},#{fieldidx},#{customize_text},#{gonggoidx})
+	</insert>
+    
+    <update id="updatePass" parameterType="PassFailDTO">
+    	update pass_fail_text
+    	set pass_text = #{pass_text}
+    	where part = #{part} and fieldidx = #{fieldidx} and companyIdx = #{companyIdx}
+    	and gonggoidx = #{gonggoidx}
+    </update>
+    
+    <update id="updateFail" parameterType="PassFailDTO">
+    	update pass_fail_text
+    	set fail_text = #{fail_text}
+    	where part = #{part} and fieldidx = #{fieldidx} and companyIdx = #{companyIdx}
+    	and gonggoidx = #{gonggoidx}
+    </update>
+    
+    <update id="updateDateSetting" parameterType="Map">
+    	update part_list
+    	set announcement_date = #{date},
+    	announcement_setting = #{setting}
+    	where part_list_title = #{part}
+    	and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+    </update>
+    
+  	<update id="updateCustom" parameterType="Map">
+    	update announcement_custom
+    	set announcement_custom_title = #{title},
+    	context = #{context}
+    	where announcement_custom_title = #{past_title} and companyIdx = #{companyIdx}
+    	and gonggoidx = #{gonggoidx}
+    </update>
+   	
+   	<delete id="deleteSCList">
+   		delete from successful_candidate_list
+   		where idx <![CDATA[ >= ]]> 1
+   	</delete>
+   
+   	<delete id="deleteCustomList" parameterType="Map">
+   		delete from announcement_applicant
+   		where announcement_custom_title = #{title}
+   		and companyIdx = #{companyIdx}
+		and gonggoidx = #{gonggoidx}
+   	</delete>
+   	
+   	<delete id="deleteCustomizeList" parameterType="Map">
+   		delete from customize_setting
+   		where part = #{part}
+   		and companyIdx = #{companyIdx}
+   		and gonggoidx = #{gonggoidx}
+   	</delete>
+   	
+   	<delete id="deleteAC" parameterType="Map">
+   		delete from applicant_customize
+   		where companyIdx = #{companyIdx}
+   		and gonggoidx = #{gonggoidx}
+   		and scode = #{scode}
+   		and attribute_field = #{fieldidx}
+   	</delete>
+</mapper>
