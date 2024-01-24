@@ -42,8 +42,7 @@ k-digital final project 권지현 고훈 프로젝트 레포지토리 입니다
 
 # 임시 아키텍쳐
 
-![전체 아키텍쳐 임시](https://github.com/briankh1221/final_project/assets/129491967/2787277b-e6b0-4d23-a9a3-f50445779786)
-
+![전체 아키텍쳐 임시](https://github.com/briankh1221/final_project/assets/145642491/0318f894-01bb-4fc1-b4f0-81e3d7b6e103)
 
 # ERD
 [👉 ERD Cloud에서 직접 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo)
