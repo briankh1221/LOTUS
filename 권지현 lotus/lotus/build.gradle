@@ -1,0 +1,68 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.2.1'
+    id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'com.project'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+configurations {
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    compileOnly 'org.projectlombok:lombok'
+
+    // Thymeleaf *24.01.16 jihyun
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf:3.1.2'
+
+    // Database *24.01.16 jihyun
+    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'org.mariadb.jdbc:mariadb-java-client'
+
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // JWT *24.01.16 jihyun
+    implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+    implementation 'com.sun.xml.bind:jaxb-impl:4.0.1'
+    implementation 'com.sun.xml.bind:jaxb-core:4.0.1'
+    implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+
+    // Validation *24.01.16 jihyun
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // Security *24.01.16 jihyun
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+
+    // Jackson ObjectMapper *24.01.19 jihyun
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+
+    // Swagger *24.01.28 jihyun
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+    // Sslf4j *24.01.28 jihyun
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-logging', version: '3.2.2'
+
+    // WebSocket *24.01.30 jihyun
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
