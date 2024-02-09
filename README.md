@@ -1,8 +1,9 @@
 # Final_Project
 
-K-Digital Training (더조은 아카데미 - 빅데이터 분석 (with 파이썬)과 엘라스틱 서치를 활용한 자바(Java) 웹 개발자 양성 과정)
+K-Digital Training 
+(더조은 아카데미 - 빅데이터 분석 (with 파이썬)과 엘라스틱 서치를 활용한 자바(Java) 웹 개발자 양성 과정)
 
-권지현, 고훈 Final Project Repository 입니다
+권지현, 고훈 파이널 프로젝트 레포지토리 입니다
 
 
 # 프로젝트 소개
