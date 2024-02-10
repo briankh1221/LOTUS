@@ -68,7 +68,8 @@ Q&A 게시판 등록 및 조회
      - Q&A 게시판 등록 및 조회
    </td>
    <td align="left" width="350px" class="관리자">
-    - Q&A 게시판 답변 및 관리</td></tr>
+    - Q&A 게시판 답변 및 관리</td>
+</tr>
 </table>
 
 ## [ 공통 기능 ]
