@@ -145,7 +145,7 @@ Q&A 게시판 등록 및 조회
 |              | /user/product                                                              | `POST`                      | 판매 상품 등록 | USER |
 |              | /user/product/{productIdx}                                                 | `PUT` 'DELETE'              | 판매 상품 수정, 삭제 | USER |
 |              | /user/product/{productIdx}/favorite                                        | `POST` 'DELETE'             | 찜 등록, 삭제 | USER |
-|              | /user/{productId}                                                       | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | USER |
+|              | /user/{productId}                                                          | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | USER |
 |              | /user/product-list                                                         | `GET`                       | 사용자 등록 상품 목록     | USER |
 | **favorite** | /user/favorite                                                             | `POST`                      | 찜 등록      | USER |
 
