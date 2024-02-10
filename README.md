@@ -50,8 +50,8 @@ Q&A 게시판 등록 및 조회
 
 ### 요약
 
-<table align="center"><!-- 팀원 표 -->
-  <tr>
+> <table align="center"><!-- 팀원 표 -->
+>  <tr>
    <th>
     공통
    </th>
