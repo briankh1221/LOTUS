@@ -42,8 +42,7 @@ Q&A 게시판 등록 및 조회
 
 # 아키텍쳐
 
-![전체 아키텍쳐 임시](https://github.com/briankh1221/final_project/assets/129491967/6d48dd94-d156-4e88-9702-ab1fa3efaabe
-)
+> ![전체 아키텍쳐 임시](https://github.com/briankh1221/final_project/assets/129491967/6d48dd94-d156-4e88-9702-ab1fa3efaabe)
 
 
 # 주요 기능
