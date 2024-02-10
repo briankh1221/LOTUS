@@ -142,14 +142,22 @@ Q&A 게시판 등록 및 조회
 |              | /auth/signup/admin                                                         | `POST`                      | 관리자 회원가입 | ADMIN |
 |              | /auth/signin                                                               | `POST`                      | 사용자/관리자 로그인 | - |
 | **user**     | /user/details                                                              | `GET` `POST`                | 나의 정보 관리 조회, 수정 | USER |
-|              | /user/product                                                              | `POST`                      | 판매 상품 등록 | USER |
+|              | /user/product                                                              | `GET` `POST`                | 판매 상품 조회, 등록 | USER |
 |              | /user/product/{productIdx}                                                 | `PUT` 'DELETE'              | 판매 상품 수정, 삭제 | USER |
 |              | /user/product/{productIdx}/favorite                                        | `POST` 'DELETE'             | 찜 등록, 삭제 | USER |
-|              | /user/{productId}                                                          | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | USER |
-|              | /user/product-list                                                         | `GET`                       | 사용자 등록 상품 목록     | USER |
-| **favorite** | /user/favorite                                                             | `POST`                      | 찜 등록      | USER |
-
-|              | /user/favorite                                                             | `GET` `PUT` `DELETE`        | 찜 상품 조회, 수정, 삭제     | USER |
+|              | /user/favorite                                                             | `GET`                       | 찜 목록 조회 | USER |
+|              | /user/product/{productIdx}/bookingStatus                                   | `PATCH`                     | 상품 예약 | USER |
+|              | /user/product/{productIdx}/soldStatus                                      | `PATCH`                     | 상품 거래 종 | USER |
+|              | /user/product/{productIdx}/bookingStatus                                   | `PATCH`                     | 상품 예약 | USER |
+|              | /user/product/{transactionStatus}                                          | `GET`                       | 거래 상태에 따른 판매 상품 조회 | USER |
+|              | /user/buying-list/{transactionStatus}                                      | `GET`                       | 거래 상태에 따른 구매 상 조회 | USER |
+|              | /user/product/{productIdx}/review                                          | `POST`                      | 리뷰 등록 | USER |
+|              | /user/product/{productIdx}/review/{reviewIdx}                              | `PUT` `DELETE`              | 리뷰 수정, 삭제 | USER |
+|              | /user/product/{productIdx}/review                                          | `GET`                       | 한 상품에 대한 모든 리뷰 조회 | USER |
+|              | /user/qna                                                                  | `POST`                      | Q&A 등록 | USER |
+|              | /user/qna/{qnaIdx}                                                         | `PUT` 'DELETE'              | Q&A 수정, 삭제 | USER |
+|              | /user/qna-list                                                             | `GET`                       | Q&A 전체 게시판 조회 | USER |
+|              | /user/qna                                                                  | `GET`                       | 이용자 작성한 Q&A 게시판 조회 | USER |
 | **qna**      | /user/qna                                                                  | `POST`                      | qna 작성     | USER |
 |              | /user/qna                                                                  | `GET` `PUT` `DELETE`        | qna 조회, 등록, 삭제     | USER |
 | **review**   | /user/review                                                               | `POST`                      | 리뷰 작성    | USER |
