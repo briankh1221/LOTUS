@@ -138,24 +138,25 @@ Q&A 게시판 등록 및 조회
 
 | Domain       | URL                                                                        | Http Method                 | description       | 접근 권한 |
 |:-------------|:---------------------------------------------------------------------------|:----------------------------|:------------------|:------|
-| **auth**     | /auth/signup                                                                    | `POST`                 | 사용자 회원가입          | USER |
-|              | /auth/signup/admin                                                              | `POST`                 | 관리자 회원가입          | ADMIN |
-|              | /auth/signin                                                                    | `POST`                 | 사용자/관리자 로그인       | -     |
-| **admin**    | /admin/product/{productId}                                                 | `GET` `PUT` `DELETE`        | 관리자 상품 조회, 수정, 삭제 | ADMIN  |
-|              | /admin/category/{categorytId}                                              | `GET` `PUT` `DELETE`        | 관리자 카테고리 항목 관리 | ADMIN  |
-|              | /admin/qna/{productId}                                                     | `GET` `PUT` `DELETE`        | 관리자 질문 게시판 관리 | ADMIN |
-|              | /admin/review/{productId}                                                  | `GET` `PUT` `DELETE`        | 관리자 리뷰 관리 | ADMIN  |
-| **Prouduct** | /product/category-list/{categoryId}                                        | `GET`                       | 카테고리 별 상품 목록 조회   | USER |
-|              | /product/best-list                                                         | `GET`                       | 베스트 상품 목록 조회      | USER |
-|              | /product/recent-list                                                       | `GET`                       | 최신 상품 목록 조회          | USER |
-|              | /user/product                                                              | `POST`                      | 상품 등록             | USER |
-|              | /product/{productId}                                                       | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | USER |
+| **auth**     | /auth/signup                                                               | `POST`                      | 이용자 회원가입 | - |
+|              | /auth/signup/admin                                                         | `POST`                      | 관리자 회원가입 | ADMIN |
+|              | /auth/signin                                                               | `POST`                      | 사용자/관리자 로그인 | - |
+| **user**     | /user/details                                                              | `GET` `POST`                | 나의 정보 관리 조회, 수정 | USER |
+|              | /user/product                                                              | `POST`                      | 판매 상품 등록 | USER |
+|              | /user/product/{productIdx}                                                 | `PUT` 'DELETE'              | 판매 상품 수정, 삭제 | USER |
+|              | /user/product/{productIdx}/favorite                                        | `POST` 'DELETE'             | 찜 등록, 삭제 | USER |
+|              | /user/{productId}                                                       | `GET` `PUT` `DELETE`        | 상품 조회, 수정, 삭제     | USER |
 |              | /user/product-list                                                         | `GET`                       | 사용자 등록 상품 목록     | USER |
 | **favorite** | /user/favorite                                                             | `POST`                      | 찜 등록      | USER |
+
 |              | /user/favorite                                                             | `GET` `PUT` `DELETE`        | 찜 상품 조회, 수정, 삭제     | USER |
 | **qna**      | /user/qna                                                                  | `POST`                      | qna 작성     | USER |
 |              | /user/qna                                                                  | `GET` `PUT` `DELETE`        | qna 조회, 등록, 삭제     | USER |
 | **review**   | /user/review                                                               | `POST`                      | 리뷰 작성    | USER |
 |              | /user/review                                                               | `GET` `PUT` `DELETE`        | 리뷰 조회, 수정, 삭제     | USER |
+| **admin**    | /admin/product/{productId}                                                 | `GET` `PUT` `DELETE`        | 관리자 상품 조회, 수정, 삭제 | ADMIN  |
+|              | /admin/category/{categorytId}                                              | `GET` `PUT` `DELETE`        | 관리자 카테고리 항목 관리 | ADMIN  |
+|              | /admin/qna/{productId}                                                     | `GET` `PUT` `DELETE`        | 관리자 질문 게시판 관리 | ADMIN |
+|              | /admin/review/{productId}                                                  | `GET` `PUT` `DELETE`        | 관리자 리뷰 관리 | ADMIN  |
 | **message**  | /user/message                                                              | `GET` `POST`                | 채팅 조회, 작성     | USER |
 
