@@ -49,12 +49,12 @@ Q&A 게시판 등록 및 조회
 
 ### 요약
 
-<table align="center"><!-- 팀원 표 -->
-<tr>
+> <table align="center"><!-- 팀원 표 -->
+> <tr>
    <th>공통</th>
    <th>이용자</th>
    <th>관리자</th>
-</tr>
+> </tr>
 <tr>
    <td align="left" width="350px" class="공통">
     - 회원가입, 로그인, 나의 정보 관리<br/>
