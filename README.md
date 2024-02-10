@@ -37,7 +37,7 @@ Q&A 게시판 등록 및 조회
 
 # ERD
 
-> [ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo)
+> [ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo) <br/>
 > ![ERD](https://github.com/briankh1221/final_project/assets/145642491/42af701f-5828-45b6-8b01-b77c07f66151)
 
 # 아키텍쳐
