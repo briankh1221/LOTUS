@@ -143,8 +143,8 @@ Q&A 게시판 등록 및 조회
 |              | /auth/signin                                                               | `POST`                      | 사용자/관리자 로그인 | BOTH |
 | **user**     | /user/details                                                              | `GET` `POST`                | 나의 정보 관리 조회, 수정 | USER |
 |              | /user/product                                                              | `GET` `POST`                | 판매 물품 조회, 등록 | USER |
-|              | /user/product/{productIdx}                                                 | `PUT` 'DELETE'              | 판매 물품 수정, 삭제 | USER |
-|              | /user/product/{productIdx}/favorite                                        | `POST` 'DELETE'             | 찜 등록, 삭제 | USER |
+|              | /user/product/{productIdx}                                                 | `PUT` `DELETE`              | 판매 물품 수정, 삭제 | USER |
+|              | /user/product/{productIdx}/favorite                                        | `POST` `DELETE`             | 찜 등록, 삭제 | USER |
 |              | /user/favorite                                                             | `GET`                       | 찜 목록 조회 | USER |
 |              | /user/product/{productIdx}/bookingStatus                                   | `PATCH`                     | 물품 예약 | USER |
 |              | /user/product/{productIdx}/soldStatus                                      | `PATCH`                     | 물품 거래 종 | USER |
@@ -155,7 +155,7 @@ Q&A 게시판 등록 및 조회
 |              | /user/product/{productIdx}/review/{reviewIdx}                              | `PUT` `DELETE`              | 리뷰 수정, 삭제 | USER |
 |              | /user/product/{productIdx}/review                                          | `GET`                       | 한 물품에 대한 모든 리뷰 조회 | USER |
 |              | /user/qna                                                                  | `POST`                      | Q&A 등록 | USER |
-|              | /user/qna/{qnaIdx}                                                         | `PUT` 'DELETE'              | Q&A 수정, 삭제 | USER |
+|              | /user/qna/{qnaIdx}                                                         | `PUT` `DELETE`              | Q&A 수정, 삭제 | USER |
 |              | /user/qna-list                                                             | `GET`                       | Q&A 전체 게시판 조회 | USER |
 |              | /user/qna                                                                  | `GET`                       | 이용자 작성한 Q&A 게시판 조회 | USER |
 | **admin**    | /admin/details                                                             | `GET` `POST`                | 관리자 정보 관리 조회, 수정 | ADMIN |
