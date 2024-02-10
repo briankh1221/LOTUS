@@ -122,7 +122,7 @@ Q&A 게시판 등록 및 조회
 
 # API 명세
 
-> | Domain       | URL                                                                        | Http Method                 | description       | 권한 |
+> | Domain       | URL                                                                        | HTTP Method                 | Description       | 권한 |
 > |:-------------|:---------------------------------------------------------------------------|:----------------------------|:------------------|:------|
 > | **auth**     | /auth/signup                                                               | `POST`                      | 이용자 회원가입 | - |
 > |              | /auth/signup/admin                                                         | `POST`                      | 관리자 회원가입 | ADMIN |
