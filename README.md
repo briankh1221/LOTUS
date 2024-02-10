@@ -33,9 +33,9 @@ Q&A 게시판 등록 및 조회
 > 7. [팀 문화](#팀-문화)
 
 # ERD
-[👉 ERD Cloud에서 직접 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo)
 
-![ERD](https://github.com/briankh1221/final_project/assets/145642491/bf9f35f2-41ed-428a-abfd-be44aba59cdb)
+![ERD](https://github.com/briankh1221/final_project/assets/145642491/42af701f-5828-45b6-8b01-b77c07f66151)
+[ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo)
 
 # 아키텍쳐
 
