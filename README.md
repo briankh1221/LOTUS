@@ -50,39 +50,25 @@ Q&A 게시판 등록 및 조회
 
 ### 요약
 
-> <table align="center"><!-- 팀원 표 -->
->  <tr>
-   <th>
-    공통
-   </th>
-   <th>
-    이용자
-   </th>
-   <th >
-    관리자
-   </th>
-   </tr>
-  <tr>
+<table align="center"><!-- 팀원 표 -->
+<tr>
+   <th>공통</th>
+   <th>이용자</th>
+   <th>관리자</th>
+</tr>
+<tr>
    <td align="left" width="350px" class="공통">
-    - 회원가입, 로그인, 나의 정보 관리
-    <br/>
-    - 채팅
-    <br/>
-    - 물품 상세 조회
-   </td>
+    - 회원가입, 로그인, 나의 정보 관리<br/>
+    - 채팅<br/>
+    - 물품 상세 조회</td>
    <td align="left" width="350px" class="이용자">
-     - 물품 판매 등록 및 관리 
-     <br/>
-     - 물품 찜 등록 및 예약 
-     <br/>
-     - 리뷰 등록 및 관리 	   
-     <br/>
+     - 물품 판매 등록 및 관리 <br/>
+     - 물품 찜 등록 및 예약 <br/>
+     - 리뷰 등록 및 관리 <br/>
      - Q&A 게시판 등록 및 조회
    </td>
    <td align="left" width="350px" class="관리자">
-    - Q&A 게시판 답변 및 관리
-   </td>
-  </tr>
+    - Q&A 게시판 답변 및 관리</td></tr>
 </table>
 
 ## [ 공통 기능 ]
