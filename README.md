@@ -126,7 +126,7 @@
 > |:-------------|:---------------------------------------------------------------------------|:----------------------------|:------------------|:------|
 > | **auth**     | /auth/signup                                                               | `POST`                      | 이용자 회원가입 | - |
 > |              | /auth/signup/admin                                                         | `POST`                      | 관리자 회원가입 | ADMIN |
-> |              | /auth/signin                                                               | `POST`                      | 사용자/관리자 로그인 | BOTH |
+> |              | /auth/signin                                                               | `POST`                      | 로그인 | BOTH |
 > | **user**     | /user/details                                                              | `GET` `POST`                | 나의 정보 관리 조회, 수정 | USER |
 > |              | /user/product                                                              | `GET` `POST`                | 판매 물품 조회, 등록 | USER |
 > |              | /user/product/{productIdx}                                                 | `PUT` `DELETE`              | 판매 물품 수정, 삭제 | USER |
@@ -148,10 +148,10 @@
 > |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST` `PUT` `DELETE`       | Q&A 답변 등록, 수정, 삭제 | ADMIN |
 > | **room**     | /room                                                                      | `POST`                      | 채팅하기 | BOTH |
 > |              | /room-list                                                                 | `GET`                       | 채팅 목록 조회 | BOTH |
-> |              | /room/{roomIdx}                                                            | `GET`                       | 채팅 메시지 내용 조회 | BOTH |
+> |              | /room/{roomIdx}                                                            | `GET`                       | 채팅 메시지 조회 | BOTH |
 > | **product**  | /product/keyword/{keyword}                                                 | `GET`                       | 키워드 검색 | - |
 > |              | /product/{productIdx}                                                      | `GET`                       | 물품 상세 조회 | - |
-> |              | /product/category-list/{categoryName}                                      | `GET`                       | 카테고리별 물품 조회 | - |
+> |              | /product/category-list/{categoryName}                                      | `GET`                       | 카테고리 별 물품 조회 | - |
 > |              | /product/recent-list/                                                      | `GET`                       | 최신 상품 조회 | - |
-> |              | /product/best-list                                                         | `GET`                       | 베스트 찜 상품 조회 | - |
+> |              | /product/best-list                                                         | `GET`                       | 최다 찜 상품 조회 | - |
 
