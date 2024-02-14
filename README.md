@@ -100,7 +100,7 @@
 > ### 물품 찜 등록 및 예약 
 > - 찜 등록 및 삭제할 수 있다.
 > - 찜 물품 목록을 조회할 수 있다.
-> - 구매하고 싶은 물품을 예약할 수 있다.
+> - 구매하고 싶은 물품을 예약 및 취소할 수 있다.
 > - 예약한 물품 및 거래 완료한 물품을 조회할 수 있다.
 >
 > ### 리뷰 등록 및 관리
@@ -125,10 +125,7 @@
 > |              | /auth/signin                                                               | `POST`                      | 로그인 | BOTH |	
 > |              | /user/details                                                              | `GET` `POST`                | 마이 페이지 조회, 등록 | USER |  
 > |              | /user/product                                                              | `GET` `POST`                | 판매 물품 조회, 등록 | USER |
-> |              | /user/product/{productIdx}                                                 | `PUT` `DELETE`              | 판매 물품 수정, 삭제 | USER |
-> |              | /user/product/{productIdx}/favorite                                        | `POST` `DELETE`             | 찜 등록, 삭제 | USER |
-> |              | /user/favorite                                                             | `GET`                       | 찜 목록 조회 | USER |
-> |              | /user/product/{productIdx}/bookingStatus                                   | `PATCH`                     | 물품 예약 | USER |
+소 | USER |
 > |              | /user/product/{productIdx}/soldStatus                                      | `PATCH`                     | 물품 거래 종 | USER |
 > |              | /user/product/{productIdx}/bookingStatus                                   | `PATCH`                     | 물품 예약 | USER |
 > |              | /user/product/{transactionStatus}                                          | `GET`                       | 거래 상태에 따른 판매 물품 조회 | USER |
