@@ -140,7 +140,7 @@
 > |              | /user/qna/{qnaIdx}                                                         | `PUT` `DELETE`              | Q&A 수정, 삭제 | USER |
 > |              | /user/qna-list                                                             | `GET`                       | Q&A 전체 게시판 조회 | USER |
 > |              | /user/qna                                                                  | `GET`                       | 이용자 작성한 Q&A 게시판 조회 | USER |
-> | **admin**    | /admin/details                                                             | `GET` `POST`                | 관리자 정보 관리 조회, 수정 | ADMIN |
+> | **admin**    | /admin/details                                                             | `GET` `POST`                | 관리자 마이 페이지 조회, 수정 | ADMIN |
 > |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST` `PUT` `DELETE`       | Q&A 답변 등록, 수정, 삭제 | ADMIN |
 > | **room**     | /room                                                                      | `POST`                      | 채팅하기 | BOTH |
 > |              | /room-list                                                                 | `GET`                       | 채팅 목록 조회 | BOTH |
