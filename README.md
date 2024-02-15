@@ -127,12 +127,17 @@
 > | **auth**     | /auth/signup                                                               | `POST`                      | 이용자 회원가입 | USER |  
 > |              | /auth/signup/admin                                                         | `POST`                      | 관리자 회원가입 | ADMIN |
 > |              | /auth/signin                                                               | `POST`                      | 로그인 | BOTH |	
-> |              | /user/details                                                              | `GET` `POST`                | 마이 페이지 조회, 등록 | USER |  
+> | **user**     | /user/details                                                              | `GET` `PUT`                 | 마이 페이지 조회, 등록 | USER |  
 > |              | /user/product                                                              | `GET` `POST`                | 판매 물품 조회, 등록 | USER |
 > |              | /user/product/{productIdx}                                                 | `PUT` `DELETE`              | 판매 물품 수정, 삭제 | USER |
 > |              | /user/product/{productIdx}/favorite                                        | `POST` `DELETE`             | 찜 등록, 삭제 | USER |
-> |              | /user/favorite                                                             | `GET`                       | 찜 목록 조회 | USER |
-> |              | /user/product/{productIdx}/bookingStatus                                   뷰 조회 | USER |
+> |              | /user/product/favorite                                                     | `GET`                       | 찜 목록 조회 | USER |
+> |              | /user/product/{productIdx}/bookingStatus                                   | `PATCH`                     | 물품 예약 | USER |
+> |              | /user/product/{productIdx}/cancelStatus                                    | `PATCH`                     | 물품 예약 취소 | USER |
+> |              | /user/product/{productIdx}/soldStatus                                      | `PATCH`                     | 물품 판매 종료 | USER |
+> |              | /user/product/{productIdx}/saleStatus                                      | `PATCH`                     | 물품 판매 종료 취소 | USER |
+> |              | /user/product-list                                                         | `GET`                       | 판매자 판매 물품 조회 | USER |
+> |              | /user/review-list                                                          | `GET`                       | 리뷰 조회 | USER |
 > |              | /user/product/{transactionStatus}                                          | `GET`                       | 거래 상태에 따른 판매 물품 조회 | USER |
 > |              | /user/buying-list/{transactionStatus}                                      | `GET`                       | 거래 상태에 따른 구매 물품 조회 | USER |
 > |              | /user/product/{productIdx}/review                                          | `POST`                      | 리뷰 등록 | USER |
