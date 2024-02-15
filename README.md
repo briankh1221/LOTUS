@@ -42,7 +42,8 @@
 > [ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo) 
 
 # 아키텍쳐
-> ![Uploading 스크린샷3.png…]()
+> <img width="553" alt="스크린샷3" src="https://github.com/briankh1221/LOTUS/assets/145642491/df71eefc-692a-4557-a3c4-89d0a0171b2c">
+
 
 
 
