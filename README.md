@@ -98,7 +98,8 @@
 > - 등록한 판매 물품을 수정 및 삭제할 수 있다.
 > - 해당 물품 거래가 완료되면 판매 종료로 거래 상태를 변경 시킬 수 있다.
 > - 판매 종료된 상품을 다시 판매 상태로 변경 시킬 수 있다.
-> - 전체 판매 물품 조회 및 거래 상태 (판매중, 예약중, 거래 완료)에 따라 물품 조회할 수 있다. 
+> - 전체 판매 물품 조회 및 거래 상태 (판매중, 예약중, 거래 완료)에 따라 물품 조회할 수 있다.
+> - 판매자의 모든 리뷰를 조회할 수 있다.
 >
 > ### 물품 찜 등록 및 예약 
 > - 찜 등록 및 삭제할 수 있다.
@@ -131,11 +132,7 @@
 > |              | /user/product/{productIdx}                                                 | `PUT` `DELETE`              | 판매 물품 수정, 삭제 | USER |
 > |              | /user/product/{productIdx}/favorite                                        | `POST` `DELETE`             | 찜 등록, 삭제 | USER |
 > |              | /user/favorite                                                             | `GET`                       | 찜 목록 조회 | USER |
-> |              | /user/product/{productIdx}/bookingStatus                                   | `PATCH`                     | 물품 예약 | USER |
-> |              | /user/product/{productIdx}/cancelStatus                                    | `PATCH`                     | 물품 예약 취소 | USER |
-> |              | /user/product/{productIdx}/soldStatus                                      | `PATCH`                     | 물품 거래 종료 | USER |
-> |              | /user/product/{productIdx}/saleStatus                                      | `PATCH`                     | 물품 거래 종료 취소 | USER |
-> |              | /user/product-list                                                         | `GET`                       | 판매자 판매 물품 조회 | USER |
+> |              | /user/product/{productIdx}/bookingStatus                                   뷰 조회 | USER |
 > |              | /user/product/{transactionStatus}                                          | `GET`                       | 거래 상태에 따른 판매 물품 조회 | USER |
 > |              | /user/buying-list/{transactionStatus}                                      | `GET`                       | 거래 상태에 따른 구매 물품 조회 | USER |
 > |              | /user/product/{productIdx}/review                                          | `POST`                      | 리뷰 등록 | USER |
