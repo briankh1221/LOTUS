@@ -154,6 +154,8 @@
 > |              | /user/qna                                                                  | `GET`                       | 이용자 Q&A 게시글 조회 | USER |
 > | **admin**    | /admin/details                                                             | `GET` `POST`                | 관리자 마이 페이지 조회, 수정 | ADMIN |
 > |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST` `PUT` `DELETE`       | Q&A 답변 등록, 수정, 삭제 | ADMIN |
+> |              | /admin/product/{productIdx}                                                | `PATCH` `DELETE`            | 관리자 물품 수정, 삭제 | ADMIN |
+> |              | /admin/review/{reviewIdx}                                                  | `DELETE`                    | 관리자 리뷰 삭제 | ADMIN |
 > | **room**     | /room                                                                      | `POST`                      | 채팅하기 | BOTH |
 > |              | /room-list                                                                 | `GET`                       | 채팅 목록 조회 | BOTH |
 > |              | /room/{roomIdx}                                                            | `GET`                       | 채팅 메시지 조회 | BOTH |
