@@ -43,7 +43,7 @@
 
 # 아키텍쳐
 > <img width="577" alt="스크린샷2" src="https://github.com/briankh1221/LOTUS/assets/145642491/5c051f2f-49eb-4e6d-80d6-d1adc6491141">
-> <img width="553" alt="스크린샷3" src="https://github.com/briankh1221/LOTUS/assets/145642491/75792ba1-f630-4e09-a556-f8b9410caf3b">
+
 
 # 주요 기능
 
