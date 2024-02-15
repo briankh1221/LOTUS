@@ -135,6 +135,7 @@
 > |              | /user/product/{productIdx}/cancelStatus                                    | `PATCH`                     | 물품 예약 취소 | USER |
 > |              | /user/product/{productIdx}/soldStatus                                      | `PATCH`                     | 물품 거래 종료 | USER |
 > |              | /user/product/{productIdx}/saleStatus                                      | `PATCH`                     | 물품 거래 종료 취소 | USER |
+> |              | /user/product-list                                                         | `GET`                       | 판매자 판매 물품 조회 | USER |
 > |              | /user/product/{transactionStatus}                                          | `GET`                       | 거래 상태에 따른 판매 물품 조회 | USER |
 > |              | /user/buying-list/{transactionStatus}                                      | `GET`                       | 거래 상태에 따른 구매 물품 조회 | USER |
 > |              | /user/product/{productIdx}/review                                          | `POST`                      | 리뷰 등록 | USER |
