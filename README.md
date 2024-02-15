@@ -42,9 +42,7 @@
 > [ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo) 
 
 # 아키텍쳐
-
-> ![전체 아키텍쳐 임시](https://github.com/briankh1221/final_project/assets/129491967/6d48dd94-d156-4e88-9702-ab1fa3efaabe)
-
+> <img width="308" alt="스크린샷" src="https://github.com/briankh1221/LOTUS/assets/145642491/7d8c1af7-82d7-44b2-8091-3ccd8f7fe2e8">
 
 # 주요 기능
 
