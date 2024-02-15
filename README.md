@@ -42,12 +42,12 @@
 > [ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo) 
 
 # 시스템 아키텍쳐
-> <img width="553" alt="스크린샷3" src="https://github.com/briankh1221/LOTUS/assets/145642491/df71eefc-692a-4557-a3c4-89d0a0171b2c">
+> <img width="797" alt="스크린샷5" src="https://github.com/briankh1221/LOTUS/assets/145642491/03babef1-2726-4e63-8b1d-25e372d8e74e">
 
 # 기술 스택
 > [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1707963477882?alt=media&token=051be5fd-0f10-4031-b4fa-67c3974b6dea)](https://github.com/msdio/stackticon)
 > [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1707963722075?alt=media&token=de54b6af-bb60-458f-916d-1012fe92bc25)](https://github.com/msdio/stackticon)
-> [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1707964154130?alt=media&token=ab7f293e-9048-424b-9158-e76f1b0eb97d)](https://github.com/msdio/stackticon)
+> [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1707967744666?alt=media&token=3102f790-1a9b-4b26-85db-4528dcf0ad4c)](https://github.com/msdio/stackticon)
 # 주요 기능
 
 ### 요약
