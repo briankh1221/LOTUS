@@ -45,7 +45,7 @@
 > <img width="797" alt="스크린샷5" src="https://github.com/briankh1221/LOTUS/assets/145642491/03babef1-2726-4e63-8b1d-25e372d8e74e">
 
 # 기술 스택
-> [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1707963477882?alt=media&token=051be5fd-0f10-4031-b4fa-67c3974b6dea)](https://github.com/msdio/stackticon)
+> [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1708045228177?alt=media&token=e5c624f1-8b5e-4945-b49f-5aaf3ce03603)](https://github.com/msdio/stackticon)
 > [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1707963722075?alt=media&token=de54b6af-bb60-458f-916d-1012fe92bc25)](https://github.com/msdio/stackticon)
 > [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1707967744666?alt=media&token=3102f790-1a9b-4b26-85db-4528dcf0ad4c)](https://github.com/msdio/stackticon)
 # 주요 기능
