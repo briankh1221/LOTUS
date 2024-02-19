@@ -151,7 +151,10 @@
 > |              | /user/qna/{qnaIdx}                                                         | `PUT` `DELETE`              | Q&A 수정, 삭제 | USER |
 > |              | /user/qna-list                                                             | `GET`                       | Q&A 전체 게시판 조회 | USER |
 > |              | /user/qna                                                                  | `GET`                       | Q&A 게시글 조회 | USER |
-> | **admin**    | /admin/details                                                             | `GET` `POST`                | 관리자 마이 페이지 조회, 수정 | ADMIN |
+> | **admin**    | /admin/product-list                                                        | `GET`                       | 물품 게시판 조회 | ADMIN |
+> |              | /admin/review-list                                                         | `GET`                       | 리뷰 게시판 조회 | ADMIN |
+> |              | /admin/qna-list                                                            | `GET`                       | Q&A 게시판 조회 | ADMIN |
+> |              | /admin/details                                                             | `GET` `POST`                | 관리자 마이 페이지 조회, 수정 | ADMIN |
 > |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST` `PUT` `DELETE`       | Q&A 답변 등록, 수정, 삭제 | ADMIN |
 > |              | /admin/product/{productIdx}                                                | `PATCH` `DELETE`            | 관리자 물품 수정, 삭제 | ADMIN |
 > |              | /admin/review/{reviewIdx}                                                  | `DELETE`                    | 관리자 리뷰 삭제 | ADMIN |
