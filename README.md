@@ -118,7 +118,7 @@
 > ## [ 관리 기능 ]
 > 
 > ### Q&A 게시판 답변 및 관리
-> -  물품, 리뷰, Q&A 게시판 조회할 수 있다.
+> -  물품, 리뷰, Q&A 게시판, Q&A 답변을 조회할 수 있다.
 > - Q&A 게시판을 통해 답변을 등록할 수 있다.
 > - 등록한 질문을 수정 및 삭제할 수 있다.
 > - 중고 물품 (카테고리, 거래 상태) 수정 및 삭제할 수 있다.
@@ -150,10 +150,7 @@
 > |              | /user/qna                                                                  | `POST`                      | Q&A 등록 | USER |
 > |              | /user/qna/{qnaIdx}                                                         | `PUT` `DELETE`              | Q&A 수정, 삭제 | USER |
 > |              | /user/qna-list                                                             | `GET`                       | Q&A 전체 게시판 조회 | USER |
-> |              | /user/qna                                                                  | `GET`                       | Q&A 게시글 조회 | USER |
-> | **admin**    | /admin/product-list                                                        | `GET`                       | 물품 게시판 조회 | ADMIN |
-> |              | /admin/review-list                                                         | `GET`                       | 리뷰 게시판 조회 | ADMIN |
-> |              | /admin/qna-list                                                            | `GET`                       | Q&A 게시판 조회 | ADMIN |
+> |              | /user/qna       변 조회 | ADMIN |
 > |              | /admin/details                                                             | `GET` `POST`                | 관리자 마이 페이지 조회, 수정 | ADMIN |
 > |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST` `PUT` `DELETE`       | Q&A 답변 등록, 수정, 삭제 | ADMIN |
 > |              | /admin/product/{productIdx}                                                | `PATCH` `DELETE`            | 관리자 물품 수정, 삭제 | ADMIN |
