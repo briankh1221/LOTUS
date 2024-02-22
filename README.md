@@ -39,7 +39,7 @@
 > [ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo) 
 
 # 시스템 아키텍쳐
-> <img src="https://github.com/briankh1221/LOTUS/assets/145642491/03babef1-2726-4e63-8b1d-25e372d8e74e">
+> <img alt="스크린샷5" src="https://github.com/briankh1221/LOTUS/assets/145642491/03babef1-2726-4e63-8b1d-25e372d8e74e">
 
 # 기술 스택
 > [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1708045228177?alt=media&token=e5c624f1-8b5e-4945-b49f-5aaf3ce03603)](https://github.com/msdio/stackticon)
@@ -90,6 +90,9 @@
 > - 채팅을 통해 구매자와 판매자 간 실시간으로 채팅할 수 있다.
 >
 > ### 물품 상세 조회
+>
+> ![스크린샷 2024-02-22 174727](https://github.com/briankh1221/LOTUS/assets/145642491/526e77c6-c10f-4efa-b69c-0b4ed1d7cc02)
+>
 > - 키워드 검색을 통해 물품을 상세 조회할 수 있다.
 > - 카테고리 별, 최신 물품, 베스트 찜 상품 등을 조회할 수 있다.
 >
