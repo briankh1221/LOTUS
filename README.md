@@ -77,7 +77,7 @@
 >
 > ### 회원가입, 로그인, 마이 페이지
 >
-> <img width="600" src="https://github.com/briankh1221/LOTUS/assets/145642491/0a3fc2e9-d027-4c0c-a2f5-f54dcdc18455">
+> <img width="600" height="300" src="https://github.com/briankh1221/LOTUS/assets/145642491/0a3fc2e9-d027-4c0c-a2f5-f54dcdc18455">
 > 
 > - 이용자는 아이디, 비밀번호, 이름, 휴대전화 번호, 이메일을 이용해 회원가입할 수 있다.
 > - 관리자는 이메일, 비밀번호, 이름, 휴대전화 번호, 이메일, 관리자 인증코드를 이용해 회원가입할 수 있다.
