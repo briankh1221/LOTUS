@@ -39,7 +39,7 @@
 > [ERD Cloud에서 보기](https://www.erdcloud.com/d/pTHTfhADbwpA9mggo) 
 
 # 시스템 아키텍쳐
-> <img width="500" alt="스크린샷5" src="https://github.com/briankh1221/LOTUS/assets/145642491/03babef1-2726-4e63-8b1d-25e372d8e74e">
+> <img width="800" alt="스크린샷5" src="https://github.com/briankh1221/LOTUS/assets/145642491/03babef1-2726-4e63-8b1d-25e372d8e74e">
 
 # 기술 스택
 > [![stackticon](https://firebasestorage.googleapis.com/v0/b/stackticon-81399.appspot.com/o/images%2F1708045228177?alt=media&token=e5c624f1-8b5e-4945-b49f-5aaf3ce03603)](https://github.com/msdio/stackticon)
