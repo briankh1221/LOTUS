@@ -120,7 +120,7 @@
 >
 > ### 리뷰 등록 및 관리
 >
->  ![10](https://github.com/briankh1221/LOTUS/assets/145642491/bdbedaa1-bff6-4e8d-b355-dccd86dd5e93)
+>  ![11](https://github.com/briankh1221/LOTUS/assets/145642491/26bd1cc2-d275-415d-b275-96143ae942e2)
 >
 > - 중고 거래한 상품에 대하여 이미지 및 평가 등을 통해 리뷰를 등록할 수 있다.
 > - 등록한 리뷰를 수정 및 삭제할 수 있다.
