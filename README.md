@@ -156,7 +156,8 @@
 > |              | /user/product/{productIdx}/soldstatus                                      | `PATCH`                     | 물품 판매 종료 | USER |
 > |              | /user/product/{productIdx}/salestatus                                      | `PATCH`                     | 물품 판매 종료 취소 | USER |
 > |              | /user/product-list                                                         | `GET`                       | 판매자 판매 물품 조회 | USER |
-> |              | /user/review-list                                                          | `GET`                       | 리뷰 조회 | USER |
+> |              | /user/seller-review-list                                                   | `GET`                       | 판매자 리뷰 조회 | USER |
+> |              | /user/buyer-review-list                                                    | `GET`                       | 구매자 리뷰 조회 | USER |
 > |              | /user/product/{transactionStatus}                                          | `GET`                       | 거래 상태에 따른 판매 물품 조회 | USER |
 > |              | /user/buying-list/{transactionStatus}                                      | `GET`                       | 거래 상태에 따른 구매 물품 조회 | USER |
 > |              | /user/product/{productIdx}/review                                          | `POST`                      | 리뷰 등록 | USER |
@@ -166,6 +167,10 @@
 > |              | /user/qna/{qnaIdx}                                                         | `PUT` `DELETE`              | Q&A 수정, 삭제 | USER |
 > |              | /user/qna-list                                                             | `GET`                       | Q&A 전체 게시판 조회 | USER |
 > |              | /user/qna                                                                  | `GET`                       | Q&A 작성한 게시판 조회 | USER |
+> |  **admin**   | /admin/product-list                                                        | `GET`                       | 관리자 중고 물품 조회 | ADMIN |
+> |              | /admin/review-list                                                         | `GET`                       | 관리자 리뷰 조회 | ADMIN |
+> |              | /admin/qna-list                                                            | `GET`                       | 관리자 Q&A 조회 | ADMIN |
+> |              | /admin/qnareply-list                                                       | `GET`                       | 관리자 Q&A 답변 조회 | ADMIN |
 > |              | /admin/details                                                             | `GET` `POST`                | 관리자 마이 페이지 조회, 수정 | ADMIN |
 > |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST` `PUT` `DELETE`       | Q&A 답변 등록, 수정, 삭제 | ADMIN |
 > |              | /admin/product/{productIdx}                                                | `PATCH` `DELETE`            | 관리자 물품 수정, 삭제 | ADMIN |
