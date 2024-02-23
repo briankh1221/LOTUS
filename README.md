@@ -152,7 +152,9 @@
 # API 명세
 
 >
-> 
+> ![MergedImages](https://github.com/briankh1221/LOTUS/assets/145642491/2f1d8505-9a3b-4208-8e41-1a84ef7744c2)
+>
+> ![MergedImages (1)](https://github.com/briankh1221/LOTUS/assets/145642491/ede1cf7e-19a9-4de7-86c3-3a4bf78c2237)
 >
 > | Domain       | URL                                                                        | HTTP Method                 | Description         | 접근 권한 |
 > |:-------------|:---------------------------------------------------------------------------|:----------------------------|:--------------------|:------|
