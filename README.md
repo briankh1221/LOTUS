@@ -116,8 +116,8 @@
 >
 > ### 물품 찜 등록 및 예약 
 > 
-> <img width="50%" src="https://github.com/briankh1221/LOTUS/assets/145642491/a7e65b49-fe45-415d-9cdb-a129c7dc0690">
-> <img width="50%" src="https://github.com/briankh1221/LOTUS/assets/145642491/6cbda3b7-009a-4ffb-bdcc-d0328d111026">
+> <img src="https://github.com/briankh1221/LOTUS/assets/145642491/a7e65b49-fe45-415d-9cdb-a129c7dc0690">
+> <img src="https://github.com/briankh1221/LOTUS/assets/145642491/6cbda3b7-009a-4ffb-bdcc-d0328d111026">
 > 
 > - 찜 등록 및 삭제할 수 있다.
 > - 찜 물품 목록을 조회할 수 있다.
