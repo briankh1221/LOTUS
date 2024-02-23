@@ -88,7 +88,7 @@
 >
 > ### 채팅
 >
-> ![12](https://github.com/briankh1221/LOTUS/assets/145642491/c5e20af6-5eaf-44e5-a366-8aed68a5c1f6)
+> ![12](https://github.com/briankh1221/LOTUS/assets/145642491/11259388-5084-4bce-b778-8e2dee1fa026)
 >
 > - 채팅 목록을 통해 지난 채팅 내용을 확인할 수 있다.
 > - 채팅을 통해 구매자와 판매자 간 실시간으로 채팅할 수 있다.
