@@ -151,6 +151,9 @@
 
 # API 명세
 
+>
+> <p width="100%"><img width="50%" src="https://github.com/briankh1221/LOTUS/assets/145642491/131bc6ec-5620-4e0a-ab0f-a7f81212a905" style="margin-right: 10px;"><img width="50%" src="https://github.com/briankh1221/LOTUS/assets/145642491/c9a713f2-f8d1-49d4-9c02-a81dd7586bd0"></p>
+>
 > | Domain       | URL                                                                        | HTTP Method                 | Description         | 접근 권한 |
 > |:-------------|:---------------------------------------------------------------------------|:----------------------------|:--------------------|:------|
 > | **auth**     | /auth/signup                                                               | `POST`                      | 이용자 회원가입 | USER |  
