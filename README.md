@@ -172,7 +172,8 @@
 > |              | /admin/qna-list                                                            | `GET`                       | 관리자 Q&A 조회 | ADMIN |
 > |              | /admin/qnareply-list                                                       | `GET`                       | 관리자 Q&A 답변 조회 | ADMIN |
 > |              | /admin/details                                                             | `GET` `POST`                | 관리자 마이 페이지 조회, 수정 | ADMIN |
-> |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST` `PUT` `DELETE`       | Q&A 답변 등록, 수정, 삭제 | ADMIN |
+> |              | /admin/qna/{qnaIdx}/qnareply                                               | `POST`                      | Q&A 답변 등록 | ADMIN |
+> |              | /admin/qna/{qnaIdx}/qnareply{qnaReplyIdx}                                  | `PUT` `DELETE`              | Q&A 답변 수정, 삭제 | ADMIN |
 > |              | /admin/product/{productIdx}                                                | `PATCH` `DELETE`            | 관리자 물품 수정, 삭제 | ADMIN |
 > |              | /admin/review/{reviewIdx}                                                  | `DELETE`                    | 관리자 리뷰 삭제 | ADMIN |
 > | **room**     | /room                                                                      | `POST`                      | 채팅하기 | BOTH |
