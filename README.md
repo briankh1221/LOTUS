@@ -25,7 +25,7 @@
 > ![스크린샷 2024-02-23 115613](https://github.com/briankh1221/LOTUS/assets/145642491/98728141-9f2c-4a42-ae21-0d36a5772649)
 >
 > - **중고 물품을 구매 및 판매할 수 있는 플랫폼입니다.**
-> - **프론트엔드는 Vue, 백엔드는 SpringBoot와 Spring Data JPA를 사용해 기본적인 REST API로 만들었습니다.**
+> - **프론트엔드는 Vue, SpringBoot와 Spring Data JPA를 사용해 기본적인 REST API로 백엔드를 구성했습니다.**
 > - **JWT(JSON Web Token)을 이용한 로그인 서비스 개발하였습니다.**
 > - **STOMP 활용하여 채팅 서비스 개발하였습니다.**
 > - **파이썬 크롤링을 활용해 타 중고사이트와 가격 비교가 가능하도록 했습니다.**
